@@ -1,5 +1,8 @@
 import React from 'react';
 import './card.css';
+/**
+ * Define a component for the cards displayed in the tables
+ */
 
 export default function index({number, type}) {
     return (

@@ -13,13 +13,6 @@ export default function index({profiles}) {
                 pagination={
                     { pageSize: 20 }
                 }
-                onRow={(record, rowIndex) => {
-                    return {
-                        onClick: event => {
-                            console.log(record)
-                        }, // click row
-                    };
-                }}
             />;
         </div>
     )

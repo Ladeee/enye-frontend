@@ -16,11 +16,14 @@ function App() {
   const [ filters, setFilters ] = useState([]);
 
   /**
-   * Filter related functions
+   *Add a new filter to the filters set
   */
   const addFilter = (newFilter) => {
     setFilters([...filters, newFilter])
   }
+  /**
+   * Remove a filter from our saed collection
+   */
   const removeFilter = (pasedfilter) => {
     setFilters(
       filters.filter(filter => !(
@@ -29,6 +32,9 @@ function App() {
       ))
     )
   }
+  /**
+   * Filter the entire dataset based on the filters currently selected
+   */
   const filterRow = (row) => {
     if(!filters.length){
       return true
@@ -47,6 +53,9 @@ function App() {
     return tempDataset;
   }
 
+  /**
+   * Filter the dataset based on what is passed into the search bar
+   */
   const filterText = (profilesToFilter) =>{
     if(!searchParam.length) return profilesToFilter;
     return profilesToFilter.filter(({FirstName, LastName}) => {
@@ -128,6 +137,7 @@ function App() {
   * Watch for changes in the filters
   */
  useEffect(() => {
+  //  filter by both filters and search bat
   const filteredDataset = filterText(filterDataset(profiles));
   setFilteredProfile(filteredDataset);
  }, [filters])
