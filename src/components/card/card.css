@@ -1,0 +1,29 @@
+.card{
+    height: 100px;
+    width: 200px;
+    background: rgb(77,117,244);
+    background: linear-gradient(175deg, rgba(77,117,244,1) 0%, rgba(97,178,149,1) 95%);
+    border-radius: 5px;
+    font-family: "manrope";
+    font-weight: 500;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.card__number{
+    letter-spacing: 2px;
+    font-size: 12px !important;
+}
+
+.card__type{
+    position: absolute;
+    bottom: 13px;
+    left: 10px;
+    font-size: 9px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px;
+}
+.card__type span{
+    margin-left: 10px;
+}

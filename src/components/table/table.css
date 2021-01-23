@@ -1,0 +1,22 @@
+.ant-table-cell{
+    font-family: 'manrope' !important;
+}
+th.ant-table-cell{
+    font-weight: bolder !important;
+}
+.customfield{
+    font-size: 10px !important;
+    letter-spacing: 1px;
+    font-weight: 600 !important;
+}
+.customfield span{
+    margin-left: 5px !important;
+}
+
+.ant-table-pagination.ant-pagination{
+    position: sticky !important;
+    bottom: 0 !important;
+    top: 0 !important;
+    padding: 10px !important;
+    background: white !important;
+}
